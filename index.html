@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PassX - Your Personal Password Manager</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <!-- // Logo and navigation links -->
+      <div class="logo">
+        <a href="index.html">PassX</a>
+      </div>
+      <!--  Navigation links -->
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <!-- <li><a href="features.html">Features</a></li> -->
+      </ul>
+    </nav>
+
+    <!--  Main content area -->
+    <div class="container">
+      <!--  Header section with title and description -->
+      <h1>Password Manager</h1>
+      <p>
+        Your privacy is our priority. We never store your master password, and
+        all data is end-to-end encrypted. Our platform is regularly audited by
+        third-party security experts.
+      </p>
+      <!--  Table to display stored passwords -->
+      <h2>Your Password <span id="alert">(Copied!)</span></h2>
+      <table>
+        <tr>
+          <th>Website</th>
+          <th>Username</th>
+          <th>Password</th>
+          <th>Delete</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>
+            
+          </td>
+        </tr>
+      </table>
+
+      <!--  Form to add a new password -->
+      <h2>Add a Password</h2>
+      <form action="action.php">
+
+        <!-- // Input fields for website, username, and password -->
+        <label for="website">Website:</label>
+        <input type="text" id="website" name="website" required><br><br>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required /><br /><br />
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+        /><br /><br />
+        <button type="submit" class="btn">Add Password</button>
+      </form>
+    </div>
+
+    <!--  Footer section -->
+    <footer>
+      <p>&copy; 2023 PassX. All rights reserved.</p>
+      <p>Made with ❤️ by Mr. Shahed</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
