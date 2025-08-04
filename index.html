@@ -26,9 +26,11 @@
       <!--  Header section with title and description -->
       <h1>Password Manager</h1>
       <p>
-        Your privacy is our priority. We never store your master password, and
-        all data is end-to-end encrypted. Our platform is regularly audited by
-        third-party security experts.
+        Your passwords are stored locally in your browser using secure storage
+        (localStorage). We do not collect or share any data. For your privacy,
+        passwords are masked on screen and can be copied safely. Please
+        remember, this tool is for personal use and does not use any encryption
+        or server-based storage.
       </p>
       <!--  Table to display stored passwords -->
       <h2>Your Password <span id="alert">(Copied!)</span></h2>
@@ -43,19 +45,16 @@
           <td></td>
           <td></td>
           <td></td>
-          <td>
-            
-          </td>
+          <td></td>
         </tr>
       </table>
 
       <!--  Form to add a new password -->
       <h2>Add a Password</h2>
       <form action="action.php">
-
         <!-- // Input fields for website, username, and password -->
         <label for="website">Website:</label>
-        <input type="text" id="website" name="website" required><br><br>
+        <input type="text" id="website" name="website" required /><br /><br />
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required /><br /><br />
         <label for="password">Password:</label>
@@ -71,6 +70,10 @@
 
     <!--  Footer section -->
     <footer>
+      <p>
+        🔒 This is a local browser-based password manager built for learning and
+        personal use.
+      </p>
       <p>&copy; 2023 PassX. All rights reserved.</p>
       <p>Made with ❤️ by Mr. Shahed</p>
     </footer>
